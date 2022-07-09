@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <script src="./assets/js/app.js" defer></script>
+    <title>Norseria</title>
+</head>
+<body>
+    <section class="login">
+        <h1 class="loginH1">Please enter your name</h1>
+        <input type="text" class="nameSelection">
+        <input type="button" class="loginButton" value="Send">
+    </section>
+    <section class="storyIntro">
+        <div class="containerWrapper">
+            <div class="containerText">
+                <p class="introText"><span class="t1">Text</p>
+                <button class="introButton">Next...</button>
+            </div>
+        </div>
+    </section>
+    <div  class="app">
+        <div class="storyline">
+            <p class="storyText txt">Wondering If Odin favors him... he casts his runes hoping for an answer…</p>
+        </div>
+        <div class="content">
+                <div class="actionUI playerAction">
+                    <h2 class="actionUIText">Player Actions</h2>
+                    <div class="actions player-actions">
+                        <div class="cards buildHut">
+                            <div class="cardsText textHut">
+                                <p class="descHut">Build a Hut!</p>
+                                <p class="costHut">(75 wood)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="boxes boxM">
+                <div class="buildings">
+                    <div class="hut"></div>
+                    <div class="trader"></div>
+                </div>
+                <div class="npcDisplay">
+                    <div class="player ">
+                    </div>
+                </div>
+                <div class="playerStats">
+                    <div class="stats playerHealth">
+                        <p class="stat playerHealthAmmount">Health: 100/100</p>
+                    </div>
+                    <div class="stats playerHunger">
+                        <p class="stat playerHungerAmmount">Hunger: 100/100</p>
+                    </div>
+                    <div class="stats playerStamina">
+                        <p class="stat playerStaminaAmmount">Stamina: 100/100</p>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="hutUI">
+                <h2 class="actionUIText">Hut Actions</h2>
+                <div class="actions building-actions">
+                    <div class="actionWrapper">
+                        <button class="cards sleep focused">
+                                <div class="overlayButton">
+                                </div>
+                            </button>
+                        <div class="actionText buildingActionText">
+                            <p>Sleep(inc.Stamina)
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buttonsWrap">
+            <button class="buttons axeUpBtn">Axe Upgrade<br><span class="costWood">(10 wood)</span></button>
+            <button class="buttons chopwood">Choop wood<br><span class="woodAmmount">1/click</span></button>
+
+            <button class="buttons mineStone">Mine Stone<br><span class="stoneAmount">1/click</span></button>
+        </div>
+
+
+        <div class="openInventory focused">
+            <p class="openInventoryP">INVENTORY</p>
+        </div>
+        <div class="showUpInv">
+            <div class="invBox ">
+                <button class="closeInvBtn">
+                    X</button>
+                <h1 class="invHeader">
+                    Inventory
+                </h1>
+                <div class="resourcesInv">
+                    <div class="resourcesWrapper">
+                        <div class="resourceSlot resourceSlotPos0">
+                            <img class="normalizeInvItem" src="./assets/images/wood.png" alt="">
+                            <p class="text woodsum">0</p>
+                        </div>
+                        <div class="resourceSlot resourceSlotPos1"><img class="normalizeInvItem" src="./assets/images/stone.png" alt="">
+                            <p class="text stonesum">0</p></div>
+                        <div class="resourceSlot resourceSlotPos2"></div>
+                        <div class="resourceSlot resourceSlotPos3"></div>
+                        <div class="resourceSlot resourceSlotPos4"></div>
+                        <div class="resourceSlot resourceSlotPos5"></div>
+                    </div>
+                </div>
+                <div class="gearInv">
+                    <div class="gearAxe"><img class="normalizeTwoSlot axeItm" src="./assets/images/axe.png" alt=""> <p class="text twoSlotsText axeUpgrade">+0</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="inventory"></div>
+
+        <div class="openStats focused">
+            <p class="openStatsP">STATS</p>
+        </div>
+        <div class="showUpStats">
+            <div class="statsBox">
+                <button class="closeStatsBtn">
+                    X</button>
+                <h1 class="statsHeader">
+                    Stats
+                </h1>
+                <div class="nameBox">
+                    <div class="nameDiv">
+                        <p class="name">
+                            XernaxeZ 
+                        </p> 
+                    <span class="currentLevel">Level 1</span></div>
+                </div>
+                <div class="expBox">
+                    <div class="currExpBox">
+                        <h2 class="currExp">Current Experience</h2>
+                        <h2 class="currExpNr">0</h2>
+                    </div>
+                    <div class="reqExpBox">
+                        <h2 class="reqExp">Required Experience</h2>
+                        <h2 class="reqExpNr">100</h2>
+                    </div>
+                </div>
+                <div class="selector">
+                    <div class="selectorBox stats0 statsSelected"></div>
+                    <div class="selectorBox stats1"></div>
+                    <div class="selectorBox stats2"></div>
+                    <div class="selectorBox stats3"></div>
+                </div>
+            </div>
+        </div>
+
+        <p class="version">Version: 0.3 Updated on:09.07.2022 21:12PM Denmark</p>
+    </div>
+</body>
+<script src="./assets/js/scene.js" ></script>
+
+</html>
